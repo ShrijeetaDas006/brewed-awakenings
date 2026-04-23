@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brewed Awakenings – Artisan Café & Roastery</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ══════════════ NAVBAR ══════════════ -->
+  <nav id="navbar">
+    <div class="nav-logo">☕ Brewed Awakenings</div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">Our Story</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact" class="nav-cta">Reserve a Table</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-label">Artisan Café &amp; Roastery · Est. 2018</p>
+      <h1 class="hero-title">Where Every<br>Cup Tells a <span>Story</span></h1>
+      <p class="hero-sub">Hand-crafted coffee, locally sourced pastries, and a cozy corner that feels like home — right in the heart of Kolkata.</p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn-primary">Explore Menu</a>
+        <a href="#contact" class="btn-outline">Reserve a Table</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ══════════════ ABOUT ══════════════ -->
+  <section id="about">
+    <div class="about-img"></div>
+    <div class="about-content reveal">
+      <p class="section-eyebrow">Our Philosophy</p>
+      <h2>Coffee is more than a drink — it's a <em>ritual</em>.</h2>
+      <p>At Brewed Awakenings, we source single-origin beans directly from family farms in Coorg, Chikmagalur, and Araku Valley. Every roast is small-batch, every cup is pulled by a trained barista who genuinely cares.</p>
+      <p>Our kitchen bakes fresh every morning — sourdough, croissants, banana bread — all made with ingredients from local farmers' markets.</p>
+      <div class="about-stats">
+        <div class="stat">
+          <div class="stat-num" data-target="6">0</div>
+          <div class="stat-label">Years Serving</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-target="12">0</div>
+          <div class="stat-label">Single Origins</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-target="500">0</div>
+          <div class="stat-label">Daily Guests</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ MENU ══════════════ -->
+  <section id="menu">
+    <p class="section-eyebrow">Crafted with Care</p>
+    <h2>Our <em>Signature</em> Menu</h2>
+    <p class="section-sub">Seasonal, locally sourced, and made from scratch every single day.</p>
+    <div class="menu-tabs">
+      <button class="tab-btn active" data-filter="all">All</button>
+      <button class="tab-btn" data-filter="drinks">Drinks</button>
+      <button class="tab-btn" data-filter="food">Food</button>
+      <button class="tab-btn" data-filter="seasonal">Seasonal</button>
+    </div>
+    <div class="menu-grid" id="menuGrid"></div>
+  </section>
+
+  <!-- ══════════════ GALLERY ══════════════ -->
+  <section id="gallery">
+    <p class="section-eyebrow">Life at Brewed Awakenings</p>
+    <h2>A Glimpse <em>Inside</em></h2>
+    <div class="gallery-grid">
+      <div class="gallery-item large">
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80" alt="Café interior" loading="lazy" />
+        <div class="gallery-caption">Our Main Hall</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=500&q=80" alt="Latte art" loading="lazy" />
+        <div class="gallery-caption">Latte Art</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=500&q=80" alt="Coffee beans" loading="lazy" />
+        <div class="gallery-caption">Single Origin Beans</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&q=80" alt="Espresso" loading="lazy" />
+        <div class="gallery-caption">Perfect Espresso</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=500&q=80" alt="Cappuccino" loading="lazy" />
+        <div class="gallery-caption">Cappuccino</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ TESTIMONIALS ══════════════ -->
+  <section id="testimonials">
+    <p class="section-eyebrow">Happy Guests</p>
+    <h2>What Our Guests Say</h2>
+    <div class="testimonial-grid" id="testimonialGrid"></div>
+  </section>
+
+  <!-- ══════════════ HOURS BANNER ══════════════ -->
+  <div class="hours-banner">
+    <div class="hours-item">
+      <div class="hours-day">Mon – Fri</div>
+      <div class="hours-time">7:00 AM – 9:00 PM</div>
+    </div>
+    <div class="hours-item">
+      <div class="hours-day">Saturday</div>
+      <div class="hours-time">8:00 AM – 10:00 PM</div>
+    </div>
+    <div class="hours-item">
+      <div class="hours-day">Sunday</div>
+      <div class="hours-time">9:00 AM – 8:00 PM</div>
+    </div>
+    <div class="hours-item">
+      <div class="hours-day">Kitchen Closes</div>
+      <div class="hours-time">30 min early</div>
+    </div>
+  </div>
+
+  <!-- ══════════════ CONTACT ══════════════ -->
+  <section id="contact">
+    <div class="contact-map">
+      <div class="map-overlay">
+        <h3>Find Us</h3>
+        <div class="contact-info-row">
+          <span class="contact-icon">📍</span>
+          <span>14 Park Street, Near Victoria Memorial,<br>Kolkata, West Bengal 700016</span>
+        </div>
+        <div class="contact-info-row">
+          <span class="contact-icon">📞</span>
+          <span>+91 98765 43210</span>
+        </div>
+        <div class="contact-info-row">
+          <span class="contact-icon">✉️</span>
+          <span>hello@brewedawakenings.in</span>
+        </div>
+        <div class="contact-info-row">
+          <span class="contact-icon">📶</span>
+          <span>Free WiFi · BrewedGuests_5G</span>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form-area">
+      <h2>Reserve a Table</h2>
+      <p>Book in advance for weekends — we fill up fast!</p>
+      <div id="formMessage" class="form-message hidden"></div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="e.g. Shrijeeta Das" />
+          <span class="field-error" id="nameError"></span>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="+91 XXXXX XXXXX" />
+          <span class="field-error" id="phoneError"></span>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" id="date" />
+          <span class="field-error" id="dateError"></span>
+        </div>
+        <div class="form-group">
+          <label for="time">Time</label>
+          <input type="time" id="time" />
+          <span class="field-error" id="timeError"></span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="guests">Party Size</label>
+        <select id="guests">
+          <option value="">Select party size</option>
+          <option value="1-2">1–2 People</option>
+          <option value="3-4">3–4 People</option>
+          <option value="5-6">5–6 People</option>
+          <option value="7+">7+ People (private event)</option>
+        </select>
+        <span class="field-error" id="guestsError"></span>
+      </div>
+      <div class="form-group">
+        <label for="requests">Special Requests</label>
+        <textarea id="requests" placeholder="Allergies, birthday celebrations, seating preferences…"></textarea>
+      </div>
+      <button class="form-submit" id="submitBtn">Confirm Reservation →</button>
+    </div>
+  </section>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer>
+    <div class="footer-logo">☕ Brewed Awakenings</div>
+    <div class="footer-tagline">Roasted with love. Served with heart.</div>
+    <div class="footer-socials">
+      <a href="#" title="Instagram" aria-label="Instagram">ig</a>
+      <a href="#" title="Facebook" aria-label="Facebook">fb</a>
+      <a href="#" title="Twitter" aria-label="Twitter">tw</a>
+      <a href="#" title="YouTube" aria-label="YouTube">yt</a>
+    </div>
+    <p class="footer-copy">© 2025 Brewed Awakenings Café &amp; Roastery. All rights reserved. | Built with ♥ in Kolkata</p>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="js/data.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/testimonials.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
